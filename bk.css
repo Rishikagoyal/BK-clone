@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+body{
+    margin: auto;
+    padding: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: bisque;
+}
+
+.navigation{
+    display: flex;
+    position: fixed;
+    z-index: 0;
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+  
+
+}
+.flex-container{
+    display:flex;
+    
+    margin:7px 15px;
+    padding-top: 20px;
+    align-items: center;
+    
+}
+
+.flex-item{
+    margin-left: 7px;
+
+}
+
+.logo{
+    width:100px;
+    height: 50px;
+   
+
+
+}
+.dine-in{
+   text-transform: uppercase;
+   opacity: 0.4;
+   text-decoration: none;
+}
+.delivery{
+    text-decoration: none;
+    color: rgb(195, 71, 26);
+    text-transform: uppercase;
+    
+}
+
+.switch{
+    width: 50px;
+    height: 37px;
+}
+
+.location{
+    margin-left: 40px;
+    padding:8px 16px;
+    width: 250px;
+    text-align: center;
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.location:focus{
+    width: 300px;
+    border: 4px solid black;
+}
+
+.container-2{
+    display:flex;
+    margin:7px 65px;
+    padding-top: 20px;
+    font-size: 10px;
+   align-items: center;
+}
+
+.nearby,.deals{
+    display: flex;
+    align-items: center;
+
+}
+
+.nearby span,.deals span{
+    margin-left: 7px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    opacity: 0.6;
+
+}
+.nearby img{
+    width:50px;
+    opacity: 0.6;
+    height: 30px;
+}
+
+
+
+.deals img{
+    width:50px;
+    height:30px;
+    margin-left: 20px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: bigdeal;
+   
+}
+
+@keyframes bigdeal {
+    from{
+        width:50px;
+        height:30px;
+        
+    }
+    to{
+        width:70px;
+        height: 50px;
+    }
+}
+.search img{
+    margin-left: 50px;
+}
+.slideShow-container{
+    width: 100%;
+    height:500px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+   
+}
+.mySlides{
+    display: none;
+}
+
+#c1,#c2,#c3{
+    width:100%;
+   
+    
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.menu-container{
+    margin-top: 10px;
+    height:100px;
+    background-color: bisque;
+    
+}
+
+.menu{
+    margin-left: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    
+    
+}
+    
+
+.seeall{
+    margin-right: 70px;
+}
+
+.friends-family img{
+   width: 200px;
+   height: 300px;
+   
+   
+}
+
+.bkspecials{
+    display: flex;
+    outline: none;
+    width: fit-content;
+    box-shadow: 10px;
+    
+}
+
+.bkspecs{
+    margin-left: 120px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.firstSpecial img{
+    width: 120px;
+    height: 200px;
+    border-top-left-radius:15px;
+    border-bottom-left-radius: 15px;
+   
+}
+.firstSpecial{
+    width: 300px;
+    display: flex;
+    margin-left: 120px;
+    background-color: white;
+    border-top-left-radius:15px;
+    border-bottom-left-radius: 15px;
+   
+    
+    
+}
+
+.firstSpecial:hover,.secondSpecial:hover,.thirdSpecial:hover, .fourthSpecial:hover{
+    width:350px ;
+    
+    
+}
+
+.classicChicken h4,p{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.classicChicken span,button{
+    margin-left: 20px;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.crispyChicken h4,p{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.crispyChicken span,button{
+    margin-left: 20px;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.secondSpecial img{
+    width: 120px;
+    height: 200px;
+    border-top-left-radius:15px;
+    border-bottom-left-radius: 15px;
+}
+.secondSpecial{
+    width: 300px;
+    display: flex;
+    box-shadow: 60px solid rgb(240, 237, 237);
+    margin-left: 60px;
+    background-color: white;
+    border-top-left-radius:15px;
+    border-bottom-left-radius: 15px;
+    transition:2ms;
+}
+
+.fries h4,p{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.fries span,button{
+    margin-left: 20px;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.thirdSpecial img,.fourthSpecial img{
+    width: 120px;
+    height: 200px;
+    border-top-left-radius:15px;
+    border-bottom-left-radius: 15px;
+}
+.thirdSpecial{
+    width: 300px;
+    display: flex;
+    box-shadow: 60px solid rgb(240, 237, 237);
+    margin-left: 120px;
+    margin-top: 40px;
+    background-color: white;
+    border-top-left-radius:15px;
+    border-bottom-left-radius: 15px;
+    transition: 2ms;
+}
+
+.fourthSpecial{
+    width: 300px;
+    display: flex;
+    box-shadow: 60px solid rgb(240, 237, 237);
+    margin-left: 120px;
+    margin-top: 40px;
+    background-color: white;
+    border-top-left-radius:15px;
+    border-bottom-left-radius: 15px;
+    transition: 2ms;
+}
+#btn:focus{
+    background-color: rgb(223, 112, 71);
+    width: 100px;
+    color: white;
+}
+
+footer{
+    background-color: #242B2E;
+    margin-top: 20px;
+    
+}
+.footer{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding:20px;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.footer h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer ul li{
+    margin:10px;
+    opacity: 0.7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#add{
+    display: none;
+   padding: 20px;
+    
+   
+}
+
+.availability{
+    display: none;
+    border-radius: 4px ;
+
+
+}
+.locationSelection{
+    text-align: center;
+
+}
+.okay{
+    background-color: rgb(210, 129, 72);
+    color: white;
+    position: relative;
+    border: none;
+    outline: none;
+    padding: 12px;
+    margin-left: 650px;
+    margin-top: 5px;
+}
+
+.signUpForm{
+    background-color: white;
+    position: absolute;
+    top: calc(50% - 20px/2);
+    left: calc(50% - 40px/2);
+    width: fit-content;
+    
+}
+
